@@ -30,6 +30,7 @@ $result = $conn->query($query);
                     <th>Dirección</th>
                     <th>Teléfono</th>
                     <th>Identificación</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,10 +45,14 @@ $result = $conn->query($query);
                         echo "<td>" . htmlspecialchars($row['direccion']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['tel']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['identificacion']) . "</td>";
+                        echo "<td>";
+                        echo "<a href='editarviajeros.php?id=" . $row['id'] . "' class='btn btn-warning btn-sm'>Editar</a> ";
+                        echo "<a href='eliminarviajeros.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"¿Estás seguro de que deseas eliminar este registro?\");'>Eliminar</a>";
+                        echo "</td>";
                         echo "</tr>";
                     }
                 } else {
-                    echo "<tr><td colspan='7'>No hay registros encontrados</td></tr>";
+                    echo "<tr><td colspan='8'>No hay registros encontrados</td></tr>";
                 }
                 ?>
             </tbody>
