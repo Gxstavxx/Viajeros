@@ -74,7 +74,7 @@
         <input type="number" class="form-control" id="telefonoEncargado" name="numero" placeholder="Ingrese el número del encargado" required>
       </div>
       <button type="submit" name="registrar" class="btn btn-custom">Registrar</button>
-      <a href="ver_registros.php" class="btn btn-custom">Ver Registros</a>
+      <a href="registrodeviajeros.php" class="btn btn-custom">Ver Registros</a>
     </form>
   </div>
 
