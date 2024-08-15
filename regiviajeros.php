@@ -48,7 +48,7 @@
   <!-- Main content -->
   <div class="container mt-4">
     <h2 class="mb-4">Registro de Viajeros</h2>
-    <form action="registro_viajeros.php" method="post">
+    <form action="intregiviajeros.php" method="post">
       <div class="form-group">
         <label for="nombre">Nombre:</label>
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
@@ -66,11 +66,11 @@
         <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
       </div>
       <div class="form-group">
-        <label for="nombreEncargado">Nombre del Encargado:</label>
+        <label for="nombreEncargado">Telefono:</label>
         <input type="text" class="form-control" id="nombreEncargado" name="ne" placeholder="Ingrese el nombre del encargado" required>
       </div>
       <div class="form-group">
-        <label for="telefonoEncargado">Teléfono del Encargado:</label>
+        <label for="telefonoEncargado">No. de identificacion</label>
         <input type="number" class="form-control" id="telefonoEncargado" name="numero" placeholder="Ingrese el número del encargado" required>
       </div>
       <button type="submit" name="registrar" class="btn btn-custom">Registrar</button>

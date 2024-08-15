@@ -1,6 +1,6 @@
 <?php
 $sn = "localhost"; 
-$db = "u";
+$db = "viajero";
 $user= "root";
 $pass = "";
 
